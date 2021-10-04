@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  justify-content: space-between;
+  border: solid 1px #2e2a2a;
+  border-radius: 5px;
+  h2{
+    margin: 0;
+  }
+  &_type{
+    margin: 0;
+    display: flex;
+    gap: .5em;
+    padding: .2em;
+    p{
+      margin: 0;
+      padding: .2em .5em;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+}
+
+.fire{
+  background-color: #e60000;
+}
+.water {
+  background-color: #6495ed;
+}
+.poison{
+  background-color: #9370db;
+}
+.grass{
+  background-color: #228b22;
+}
+.bug {
+  background-color: #c1eb4c;
+}
+.flying{
+  background-color: #2dc6f8;
+}
