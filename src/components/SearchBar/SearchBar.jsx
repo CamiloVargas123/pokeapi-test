@@ -1,10 +1,10 @@
 import React from 'react'
 import "./SearchBar.scss";
-import {searchPokemon} from "../../services/GetPoke"
+import {searchPokemonAPI} from "../../services/GetPoke"
 
 export default function SearchBar() {
   const searchPoke = async e => {
-    const data = await searchPokemon(e);
+    const data = await searchPokemonAPI(e);
     
     console.log(data)
   }
