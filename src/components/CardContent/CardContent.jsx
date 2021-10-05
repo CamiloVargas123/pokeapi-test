@@ -41,6 +41,8 @@ export default function CardContent() {
         dataLength={pokemons.length}
         next={() => fechtMorePokemons(page + 25)}
         hasMore={true}
+        height="73vh"
+        endMessage={<p>finish</p>}
         loader={<Loading />}
       >
         <Cards pokemons={pokemons} loading={loading} getPokemons={getPokemons} page={page} />
