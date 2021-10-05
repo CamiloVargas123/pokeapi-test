@@ -9,7 +9,7 @@ export function searchPokemonAPI(pokemon) {
   })
 }
 
-export function getPokemonAPI(limit=10, offset=0){
+export function getPokemonAPI(limit=25, offset=0){
   let url = `${urlMain}pokemon?limit=${limit}&offset=${offset}`
   return fetch(url).then(reponse => {
     return reponse.json();
