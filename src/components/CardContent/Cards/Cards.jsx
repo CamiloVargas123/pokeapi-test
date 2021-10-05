@@ -6,9 +6,9 @@ export default function Cards(props) {
   const {pokemons} = props
   return (
     <div className="cards">
-      {pokemons.map((pokemon) => {
+      {pokemons.map((pokemon, index) => {
         return(
-          <CardView pokemon={pokemon}/>
+          <CardView pokemon={pokemon} key={index} />
         )
       })}
     </div>
