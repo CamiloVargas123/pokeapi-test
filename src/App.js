@@ -9,9 +9,9 @@ function App() {
         <Navbar />
         <SearchBar />
       </header>
-     <body>
+     <main>
       <CardContent />
-     </body>
+     </main>
     </div>
   );
 }
