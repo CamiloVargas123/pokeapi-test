@@ -5,7 +5,7 @@ export function searchPokemonAPI(pokemon) {
   return fetch(url).then(reponse => {
     return reponse.json();
   }).catch(err => {
-    return err
+    return null
   })
 }
 
